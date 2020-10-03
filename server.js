@@ -1,9 +1,17 @@
 const app = require('./src/app')
+const appGame = require('./exercicio-para-casa/src/app')
 
 const PORT = 8080
+const PORTgame = 8081
+
 
 app.listen(PORT, function (request, response) {
-    console.log("O Nosso app esta rodando na porta " + PORT)
+    console.log("O Nosso app de musicas  esta rodando na porta " + PORT)
+}) 
+ 
+
+appGame.listen(PORTgame, function (request, response) {
+    console.log("O Nosso app de games  esta rodando na porta " + PORTgame)
 })
 
 
